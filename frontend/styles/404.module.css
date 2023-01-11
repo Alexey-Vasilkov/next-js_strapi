@@ -1,0 +1,10 @@
+.error {
+    text-align: center;
+    margin: 100px 0 200px;
+  }
+  
+  .error h1 {
+    display: inline-flex;
+    align-items: center;
+    font-size: 50px;
+  }
