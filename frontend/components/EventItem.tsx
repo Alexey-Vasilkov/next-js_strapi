@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 import styles from "@/styles/EventItem.module.css";
 
-interface EventItemProps {
+interface IEventItemProps {
   evt: any;
 }
 
-export default function EventItem({ evt }: EventItemProps) {
+export default function EventItem({ evt }: IEventItemProps) {
   return (
     <div className={styles.event}>
       <div className={styles.img}>
@@ -26,7 +26,7 @@ export default function EventItem({ evt }: EventItemProps) {
       </div>
       <div className={styles.link}>
         <Link href={`/events/${evt.id}`} className="btn">
-          Details
+          <a className="btn">Details</a>
         </Link>
       </div>
     </div>

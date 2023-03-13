@@ -1,8 +1,13 @@
 import EventItem from "@/components/EventItem";
 import { API_URL } from "@/config/index";
+import { EventType } from "types/types";
 import Layout from "../../components/Layout";
 
-export default function EventsPage({ events }) {
+interface IEventsPageProps {
+  events: EventType[];
+}
+
+export default function EventsPage({ events }: IEventsPageProps) {
   return (
     <Layout>
       <h1>Events</h1>

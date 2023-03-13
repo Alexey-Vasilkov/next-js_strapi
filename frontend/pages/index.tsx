@@ -2,13 +2,16 @@ import Layout from "@/components/Layout";
 import EventItem from "@/components/EventItem";
 import { API_URL } from "@/config/index";
 import Link from "next/link";
+import { EventType } from "types/types";
 
-//TODO: change any type
+interface IHomeProps {
+  events: EventType[];
+}
 
-export default function HomePage({ events }) {
+export default function HomePage({ events }: IHomeProps) {
   return (
     <Layout>
-      <h1>Upcoming Events</h1>
+      <h1>Upcoming Club Events</h1>
       {events.length === 0 && <h3>No events to show</h3>}
 
       {events.map((evt: any) => (
