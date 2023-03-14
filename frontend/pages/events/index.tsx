@@ -12,7 +12,7 @@ export default function EventsPage({ events }: IEventsPageProps) {
     <Layout>
       <h1>Events</h1>
       {events.length === 0 && <h3>No events to show</h3>}
-      {events.map((evt: any) => (
+      {events.map((evt: EventType) => (
         <EventItem key={evt.id} evt={evt} />
       ))}
     </Layout>

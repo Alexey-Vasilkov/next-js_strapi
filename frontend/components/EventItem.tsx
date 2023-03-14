@@ -2,9 +2,10 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/EventItem.module.css";
+import { EventType } from "types/types";
 
 interface IEventItemProps {
-  evt: any;
+  evt: EventType;
 }
 
 export default function EventItem({ evt }: IEventItemProps) {

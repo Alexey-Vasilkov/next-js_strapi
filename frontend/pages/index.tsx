@@ -14,7 +14,7 @@ export default function HomePage({ events }: IHomeProps) {
       <h1>Upcoming Club Events</h1>
       {events.length === 0 && <h3>No events to show</h3>}
 
-      {events.map((evt: any) => (
+      {events.map((evt: EventType) => (
         <EventItem key={evt.id} evt={evt} />
       ))}
 
